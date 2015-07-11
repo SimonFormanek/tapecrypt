@@ -1,0 +1,4 @@
+:set key='abc'
+:set key="
+:set key=abc
+:set key=''

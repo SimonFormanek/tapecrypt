@@ -1,0 +1,25 @@
+#!/bin/bash
+#$1 = file.htmc, create temporary htmt and delete it afterway
+KEY='abc'
+MYF=`echo $1 | sed 's:^.*/::' | sed 's/\..*$//'`
+decrypt $MYF
+vim $MYF.htmt
+vim  -s vimmacroscompled.tmp $1 > /dev/null 2>&1
+crypt $MYF
+
+
+
+
+
+
+
+
+###   batch mode: 	vim  -s vimmacroscompled.tmp $1 > /dev/null 2>&1
+
+#echo ":wq! $MYF.htmt" >> vimmacroscompled.tmp
+
+#cp vimmacros.txt vimmacroscompled.tmp
+
+#echo ":set key=$KEY" >> vimmacroscompled.tmp
+#echo ":set key=''" >> vimmacroscompled.tmp
+

@@ -1,0 +1,2 @@
+:set key='abc'
+:set key="
