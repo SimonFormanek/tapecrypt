@@ -1,5 +1,5 @@
 CFLAGS = --pedantic -Wall -std=c99 -O2
-LDFLAGS =
+#LDFLAGS =
 
 # this lists the binaries to produce, the (non-PHONY, binary) targets in
 # the previous manual Makefile
@@ -14,7 +14,7 @@ decrypt_SOURCES = decrypt.c
 .PHONY: clean
 
 clean:
-	rm -f $(binaries) *.o
+	rm -f $(bin_PROGRAMS) *.o
 
 
-all: crypt
+all: crypt decrypt
