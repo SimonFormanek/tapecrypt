@@ -202,13 +202,13 @@ AUTOHEADER = ${SHELL} /home/vitex/Projects/3DParty/tapecrypt/missing autoheader
 AUTOMAKE = ${SHELL} /home/vitex/Projects/3DParty/tapecrypt/missing automake-1.14
 AWK = gawk
 CC = gcc
-CCDEPMODE = depmode=none
-CFLAGS = -g -O2 -fstack-protector-strong -Wformat -Werror=format-security
+CCDEPMODE = depmode=gcc3
+CFLAGS = -g -O2
 CPP = gcc -E
-CPPFLAGS = -D_FORTIFY_SOURCE=2
+CPPFLAGS = 
 CXX = g++
-CXXDEPMODE = depmode=none
-CXXFLAGS = -g -O2 -fstack-protector-strong -Wformat -Werror=format-security
+CXXDEPMODE = depmode=gcc3
+CXXFLAGS = -g -O2
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -223,7 +223,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -Wl,-z,relro
+LDFLAGS = 
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
@@ -254,7 +254,7 @@ am__quote =
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 bindir = ${exec_prefix}/bin
-build_alias = x86_64-linux-gnu
+build_alias = 
 builddir = .
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
@@ -264,23 +264,23 @@ exec_prefix = ${prefix}
 host_alias = 
 htmldir = ${docdir}
 includedir = ${prefix}/include
-infodir = ${prefix}/share/info
+infodir = ${datarootdir}/info
 install_sh = ${SHELL} /home/vitex/Projects/3DParty/tapecrypt/install-sh
-libdir = ${prefix}/lib/x86_64-linux-gnu
-libexecdir = ${prefix}/lib/x86_64-linux-gnu
+libdir = ${exec_prefix}/lib
+libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
-localstatedir = /var
-mandir = ${prefix}/share/man
+localstatedir = ${prefix}/var
+mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr
+prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
-sysconfdir = /etc
+sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .

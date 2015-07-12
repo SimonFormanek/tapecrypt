@@ -20,7 +20,7 @@ Maintainer: Šimon Formánek <mail@simonformanek.cz>
 # Changelog: <changelog file; defaults to a generic changelog>
 Readme: README.md
 # Extra-Files: <comma-separated list of additional files for the doc directory>
-# Files: <pair of space-separated paths; First is file to include, second is destination>
+Files: src/crypt src/decrypt
 #  <more pairs, if there's more than one file to include. Notice the starting space>
 Description: C library for Vernam cypher
  long description and info
