@@ -1,4 +1,6 @@
-CFLAGS = --pedantic -Wall -std=c99 -O2
+CFLAGS = -g --pedantic -Wall -std=c99 -O2
+CPPFLAGS = -g --pedantic -Wall -std=c99 -O2
+
 #LDFLAGS =
 
 # this lists the binaries to produce, the (non-PHONY, binary) targets in
