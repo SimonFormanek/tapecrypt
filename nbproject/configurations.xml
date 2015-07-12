@@ -6,6 +6,7 @@
         <in>crypt.cpp</in>
         <in>decrypt.cpp</in>
       </df>
+      <in>config.h</in>
       <in>crypt2.cpp</in>
       <in>decrypt..bak.cpp</in>
       <in>decrypt2.cpp</in>
@@ -38,7 +39,7 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
-          <executablePath></executablePath>
+          <executablePath>src/crypt</executablePath>
         </makeTool>
       </makefileType>
       <item path="crypt2.cpp" ex="false" tool="1" flavor2="4">
@@ -52,6 +53,37 @@
       <item path="src/crypt.cpp" ex="false" tool="1" flavor2="4">
       </item>
       <item path="src/decrypt.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+    </conf>
+    <conf name="decrypt" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE}</buildCommand>
+          <cleanCommand>${MAKE} clean</cleanCommand>
+          <executablePath>src/decrypt</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="crypt2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="decrypt..bak.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="decrypt2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="decryptstdout.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/decrypt.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

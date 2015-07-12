@@ -2,4 +2,10 @@ exampledir = $(datarootdir)/doc/@PACKAGE@
 example_DATA = sample1.dat sample2.dat
 
 clean:
-all:
+all: freshtape
+
+
+freshtape:
+	if [ ! -f tape.example ]; then ../src/tapegenerator 1024 20000 > tape.example; fi
+cleantape:
+	rm -f tape.example

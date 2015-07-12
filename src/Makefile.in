@@ -5,9 +5,11 @@ CPPFLAGS = -g --pedantic -Wall -std=c99 -O2
 
 # this lists the binaries to produce, the (non-PHONY, binary) targets in
 # the previous manual Makefile
-bin_PROGRAMS = crypt decrypt 
-crypt_SOURCES = crypt.c
-decrypt_SOURCES = decrypt.c
+bin_PROGRAMS = crypt decrypt tapegenerator
+crypt_SOURCES = crypt.cpp
+decrypt_SOURCES = decrypt.cpp
+tapegenerator_SOURCES = tapegenerator.cpp
+
 #targetbinary1_SOURCES = targetbinary1.c myheader.h [...]
 #targetbinary2_SOURCES = targetbinary2.c
 #.
@@ -19,4 +21,6 @@ clean:
 	rm -f $(bin_PROGRAMS) *.o
 
 
-all: crypt decrypt
+all: $(bin_PROGRAMS)
+
+
