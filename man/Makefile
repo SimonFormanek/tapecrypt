@@ -1,3 +1,0 @@
-man_MANS = crypt.1 decrypt.1, makealphabet.1
-clean:
-all:

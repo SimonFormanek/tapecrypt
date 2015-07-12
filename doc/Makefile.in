@@ -3,6 +3,7 @@ doc_DATA = README
 
 .PHONY : clean
 clean :
+distclean:
 all: 
 
 

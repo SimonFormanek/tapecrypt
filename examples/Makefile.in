@@ -1,6 +1,7 @@
 exampledir = $(datarootdir)/doc/@PACKAGE@
 example_DATA = sample1.dat sample2.dat
 
+distclean:
 clean:
 all: freshtape
 

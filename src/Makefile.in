@@ -17,6 +17,7 @@ tapegenerator_SOURCES = tapegenerator.cpp
 #targetbinaryN_SOURCES = targetbinaryN.c
 .PHONY: clean
 
+distclean: clean
 clean:
 	rm -f $(bin_PROGRAMS) *.o
 
